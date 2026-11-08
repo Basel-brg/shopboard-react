@@ -13,7 +13,7 @@ Read this file before making any changes. If you learn something durable about t
 - **3D Graphics Engine**: Three.js via React Three Fiber (`@react-three/fiber`) & `@react-three/drei`.
 - **Styling & Design System**: Pure CSS3 with `:root` CSS Design Tokens and CSS Modules (_Akari Desk Atelier_ aesthetic: Warm Stone, Washi Ivory, Deep Emerald, Bamboo Tan, and Charcoal Ink).
 - **Testing**: Vitest + React Testing Library (Unit & Component Tests) & Playwright (Multi-browser E2E Tests).
-- **Linter**: Oxlint (ultra-fast Rust linter).
+- **Linter & Formatter**: ESLint 9 (flat config) & Prettier with Husky + lint-staged pre-commit hooks.
 - **Localization**: Full RTL Arabic support (`lang="ar" dir="rtl"`), styled with Readex Pro and IBM Plex Sans Arabic.
 
 ---
@@ -149,6 +149,7 @@ npm run build        # Typecheck (tsc -b) and build production bundle into dist/
 npm run typecheck    # Run TypeScript compiler check without emitting files
 npm test             # Run Vitest unit & component test suite
 npm run test:e2e     # Run Playwright browser E2E test suite
-npm run lint         # Run Oxlint static code analysis
+npm run lint         # Run ESLint static code analysis
+npm run format:check # Verify code formatting with Prettier
 npm run preview      # Preview production build locally
 ```

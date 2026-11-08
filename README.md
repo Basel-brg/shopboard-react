@@ -44,17 +44,17 @@ ShopBoard (شوب بورد) is an editorial e-commerce platform and interactive 
 
 ## Tech Stack
 
-| Domain                       | Technology                                                                                                                 | Purpose                                                           |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| **Framework**                | [React 19](https://react.dev/)                                                                                             | Declarative UI, Strict Mode, Concurrent Features                  |
-| **Language**                 | [TypeScript 5.x / 7.x](https://www.typescriptlang.org/)                                                                    | Strict static typing, 0 `any` policy                              |
-| **Bundler & Dev Server**     | [Vite 8](https://vitejs.dev/)                                                                                              | High-speed ESM bundling and Hot Module Replacement (HMR)          |
-| **3D WebGL Graphics**        | [Three.js](https://threejs.org/) + [React Three Fiber](https://r3f.docs.pmnd.rs/) + [Drei](https://github.com/pmndrs/drei) | Real-time 3D desk customizer and interactive scene controls       |
-| **State Management**         | Native React Context API + Custom Hooks                                                                                    | Zero external dependencies (no Redux, Zustand, or MobX)           |
-| **Styling**                  | Pure CSS3 + Design Tokens                                                                                                  | Custom `:root` properties, mobile-first responsive media queries  |
-| **Unit & Integration Tests** | [Vitest](https://vitest.dev/) + [React Testing Library](https://testing-library.com/react)                                 | High-speed unit testing for pure logic and components             |
-| **End-to-End Tests**         | [Playwright](https://playwright.dev/)                                                                                      | Multi-browser headless E2E verification of critical user journeys |
-| **Linter**                   | [Oxlint](https://oxc.rs/docs/guide/usage/linter)                                                                           | Next-generation ultra-fast Rust-based static code analysis        |
+| Domain                       | Technology                                                                                                                 | Purpose                                                               |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **Framework**                | [React 19](https://react.dev/)                                                                                             | Declarative UI, Strict Mode, Concurrent Features                      |
+| **Language**                 | [TypeScript 5.x / 7.x](https://www.typescriptlang.org/)                                                                    | Strict static typing, 0 `any` policy                                  |
+| **Bundler & Dev Server**     | [Vite 8](https://vitejs.dev/)                                                                                              | High-speed ESM bundling and Hot Module Replacement (HMR)              |
+| **3D WebGL Graphics**        | [Three.js](https://threejs.org/) + [React Three Fiber](https://r3f.docs.pmnd.rs/) + [Drei](https://github.com/pmndrs/drei) | Real-time 3D desk customizer and interactive scene controls           |
+| **State Management**         | Native React Context API + Custom Hooks                                                                                    | Zero external dependencies (no Redux, Zustand, or MobX)               |
+| **Styling**                  | Pure CSS3 + Design Tokens                                                                                                  | Custom `:root` properties, mobile-first responsive media queries      |
+| **Unit & Integration Tests** | [Vitest](https://vitest.dev/) + [React Testing Library](https://testing-library.com/react)                                 | High-speed unit testing for pure logic and components                 |
+| **End-to-End Tests**         | [Playwright](https://playwright.dev/)                                                                                      | Multi-browser headless E2E verification of critical user journeys     |
+| **Linter & Formatter**       | [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)                                                           | Automated flat-config linting and formatting with Husky & lint-staged |
 
 ---
 
@@ -195,8 +195,11 @@ npm run test:watch
 # Run Playwright End-to-End browser test suite
 npm run test:e2e
 
-# Run Oxlint static code analysis
+# Run ESLint static code analysis
 npm run lint
+
+# Verify code formatting with Prettier
+npm run format:check
 ```
 
 ### Production Build
